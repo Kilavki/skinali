@@ -38,6 +38,23 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+.button {
+  border: none;
+  text-transform: uppercase;
+  padding: 25px 45px;
+  background-color: #507fe1;
+  color: #ffffff;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,11 +68,7 @@ body {
   min-height: 80px;
 }
 
-.navbar__menu-button {
-  margin-right: 30px;
-}
-
-.navbar__mobile, .navbar__lanline {
+.navbar__mobile, .navbar __lanline {
   text-align: right;
 }
 
@@ -72,6 +85,7 @@ body {
   display: block;
   font-size: 14px;
   color: #7b7b79;
+  text-decoration: none;
 }
 
 .menu-button {
@@ -116,5 +130,24 @@ body {
   display: block;
   font-size: 14px;
   color: text-color-light;
+}
+
+.hero {
+  background: #f1f1f1 url("../img/hero/hero-img-bg.jpg") no-repeat center top 72px;
+  background-size: contain;
+  padding-top: 200px;
+  padding-bottom: 270px;
+}
+
+.hero__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.hero__subtitle {
+  display: block;
+  margin-bottom: 67px;
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
