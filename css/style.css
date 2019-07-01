@@ -60,12 +60,6 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-@media (max-width: 576) {
-  .button-o {
-    font-size: 10px;
-  }
-}
-
 .button {
   border: none;
   text-transform: uppercase;
@@ -73,6 +67,16 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.bg-secondary {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 576) {
+  .button-o {
+    font-size: 10px;
+  }
 }
 
 .navbar {
@@ -273,5 +277,14 @@ body {
   .hero__title {
     margin-top: 32%;
   }
+}
+
+.offer {
+  padding: 129px 0;
+}
+
+.offer-block {
+  background-color: #fff;
+  padding: 80px;
 }
 /*# sourceMappingURL=style.css.map */
