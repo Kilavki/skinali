@@ -474,4 +474,15 @@ input[type="checkbox"]:checked + label:before {
     margin-bottom: 50px;
   }
 }
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 /*# sourceMappingURL=style.css.map */
