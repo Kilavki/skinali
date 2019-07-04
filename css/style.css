@@ -84,6 +84,29 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+.button-fitting, .button-add, .button-like {
+  padding: 10px;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 11px;
+  border: none;
+}
+
+.button-fitting {
+  background-color: #ffffff;
+  color: #507fe1;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #ffffff;
+}
+
+.button-like {
+  width: 30px;
+  background-color: #507fe1;
+}
+
 .bg-secondary {
   background-color: #f1f1f1;
 }
@@ -484,5 +507,40 @@ input[type="checkbox"]:checked + label:before {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 10;
+  left: 10;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__img {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
