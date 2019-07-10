@@ -76,6 +76,7 @@ img {
   text-transform: uppercase;
   background-color: #fff;
   color: #507fe1;
+  text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
@@ -85,6 +86,7 @@ img {
   padding: 25px 45px;
   background-color: #507fe1;
   color: #ffffff;
+  text-decoration: none;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
@@ -502,6 +504,10 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+.catalog {
+  background-color: #f5f6f7;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,7 +524,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .catalog-card {
-  max-width: 530px;
+  max-width: 540px;
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
@@ -553,6 +559,20 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .catalog-card__img {
+  display: block;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
   display: block;
 }
 
