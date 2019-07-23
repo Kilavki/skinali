@@ -124,6 +124,8 @@ img {
 .input {
   height: 80px;
   padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
   border: 1px solid #dddddd;
 }
 
@@ -158,7 +160,8 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 576px) {
-  .button-o {
+  .button {
+    font-size: 10px;
     font-size: 10px;
   }
   .section {
@@ -169,12 +172,23 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 400px) {
+  .button {
+    font-size: 8px;
+    font-size: 8px;
+  }
+  .section__title {
+    margin-bottom: 62px;
+  }
+}
+
 .navbar {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 1000;
 }
 
 .navbar-wrap {
@@ -475,6 +489,24 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 480px) {
+  .form__row-checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form__checkbox {
+    margin-bottom: 20px;
+  }
+  .form__group input {
+    padding: 0;
+  }
+}
+
 .features-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,10 +695,6 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.price {
-  background-color: #f1f1f1;
-}
-
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,7 +739,6 @@ input[type="checkbox"]:checked + label:before {
 
 .price-card__button {
   position: absolute;
-  z-index: -1;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -720,12 +747,30 @@ input[type="checkbox"]:checked + label:before {
   padding-top: 0;
   text-align: center;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
 .price-card:hover .price-card__button {
   z-index: 99;
   bottom: -80px;
+}
+
+@media (max-width: 991px) {
+  .price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .price-block__card {
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

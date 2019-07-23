@@ -1,5 +1,4 @@
 .price
-	background-color: #f1f1f1
 	&-block
 		display: flex
 		justify-content: space-between
@@ -21,7 +20,6 @@
 			justify-content: space-between
 		&__button
 			position: absolute
-			z-index: -1
 			bottom: 0
 			left: 0
 			width: 100%
@@ -30,8 +28,22 @@
 			padding-top: 0
 			text-align: center
 			background-color: #fff
-			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05)
+			box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1)
+			z-index: -1
 		&:hover
 			.price-card__button
 				z-index: 99
 				bottom: -80px
+@media (max-width: 991px)
+	.price
+		&-block
+			justify-content: center
+			&__card
+				margin: 20px
+@media (max-width: 400px)
+	.price
+		&-block
+			&__card
+				margin: 10px
+	
+			
