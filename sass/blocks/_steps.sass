@@ -3,6 +3,9 @@
 	text-align: center
 	&__title
 		font-size: 18px
+	&:last-child
+		&:before
+			display: none
 	&:before
 		content: ''
 		position: absolute
@@ -14,7 +17,18 @@
 		background-color: rgba(#7e7b78, 0.8)
 	&__text
 		max-width: 160px
+		margin: auto
+		margin-bottom: 30px
 	&s
 		&-block
 			display: flex
 			justify-content: space-between
+			flex-wrap: wrap
+@media (max-width: 991px)
+	.step
+		width: 33%
+		&:before
+			display: none
+@media (max-width: 768px)
+	.step
+		width: 100%

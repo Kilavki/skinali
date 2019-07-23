@@ -757,7 +757,7 @@ input[type="checkbox"]:checked + label:before {
   bottom: -80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -783,6 +783,10 @@ input[type="checkbox"]:checked + label:before {
   font-size: 18px;
 }
 
+.step:last-child:before {
+  display: none;
+}
+
 .step:before {
   content: '';
   position: absolute;
@@ -796,6 +800,8 @@ input[type="checkbox"]:checked + label:before {
 
 .step__text {
   max-width: 160px;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .steps-block {
@@ -805,5 +811,22 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+  .step {
+    width: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
