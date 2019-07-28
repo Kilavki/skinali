@@ -829,4 +829,48 @@ input[type="checkbox"]:checked + label:before {
     width: 100%;
   }
 }
+
+.review-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.review-slider__item {
+  text-align: center;
+}
+
+.review-slider__img {
+  width: 70px;
+  height: 70px;
+  margin: 20px auto;
+  border: 2px solid #6a99e9;
+  border-radius: 50%;
+}
+
+.review-slider__text {
+  position: relative;
+  max-width: 350px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-style: italic;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.review-slider__text:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
 /*# sourceMappingURL=style.css.map */
