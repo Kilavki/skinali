@@ -388,15 +388,23 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer-block {
-  background-image: url("../img/form/form-bg.png");
   background-repeat: no-repeat;
   background-position: center right -44px;
-  background-size: contain;
   background-color: #fff;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 80px;
   margin-top: -200px;
+}
+
+.offer-block__calc-bg {
+  background-image: url("../img/form/ofer-block-calc-bg.png");
+  background-size: contain;
+}
+
+.offer-block__price-bg {
+  background-image: url("../img/form/ofer-block-price-bg.png");
+  background-size: contain;
 }
 
 .offer__title {
@@ -407,6 +415,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer__subtitle {
+  max-width: 660px;
   display: block;
   font-size: 21px;
   margin-bottom: 48px;
@@ -420,7 +429,7 @@ input[type="checkbox"]:checked + label:before {
       -ms-flex-align: center;
           align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .form__row:last-child {
@@ -449,18 +458,26 @@ input[type="checkbox"]:checked + label:before {
   width: 100%;
 }
 
+.form__policy {
+  display: inline-block;
+  margin-left: 45px;
+}
+
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -210px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .offer-block {
     background: none;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 40px;
   }
+}
+
+@media (max-width: 768px) {
   .offer__title {
     font-size: 22px;
   }
@@ -486,6 +503,10 @@ input[type="checkbox"]:checked + label:before {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 
