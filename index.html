@@ -509,24 +509,26 @@
 			<div class="container">
 				<h2 class="section-title section__title">до и после</h2>
 				<!-- /.section-title section__title -->
-				<div id="before-slider" class="before-slider">
-					<div class="before-slider__item">
-						<div class="before-after">
+				<div class="before-slider-wrap">
+					<div id="before-slider" class="before-slider">
+						<div class="before-slider__item">
+							<div class="before-after">
 								<img src="img/before-slider/Skinali-dlya-kyhni-01.jpg" alt="">
 								<img src="img/before-slider/Skinali-dlya-kyhni-02.jpg" alt="">
+							</div>
 						</div>
-					</div>
-					<div class="before-slider__item">
+						<div class="before-slider__item">
 							<div class="before-after">
-									<img src="img/before-slider/Skinali-dlya-kyhni-09.jpg" alt="">
-									<img src="img/before-slider/Skinali-dlya-kyhni-11.jpg" alt="">
+								<img src="img/before-slider/Skinali-dlya-kyhni-09.jpg" alt="">
+								<img src="img/before-slider/Skinali-dlya-kyhni-11.jpg" alt="">
 							</div>
-					</div>
-					<div class="before-slider__item">
+						</div>
+						<div class="before-slider__item">
 							<div class="before-after">
-									<img src="img/before-slider/Skinali-dlya-kyhni-12.jpg" alt="">
-									<img src="img/before-slider/Skinali-dlya-kyhni-15.jpg" alt="">
+								<img src="img/before-slider/Skinali-dlya-kyhni-12.jpg" alt="">
+								<img src="img/before-slider/Skinali-dlya-kyhni-15.jpg" alt="">
 							</div>
+						</div>
 					</div>
 					<div class="before-slider-arrows">
 						<button class="arrow arrow-left">
@@ -537,6 +539,7 @@
 						</button>
 					</div>
 				</div>
+				<!-- /.before-slider-wrap -->
 			</div>
 			<!-- /.container -->
 		</section>
@@ -731,10 +734,6 @@
 </footer>
 <!-- /.footer -->
 
-
-
-	
-
 	<br>
 	<br>
 	<br>
@@ -748,31 +747,6 @@
 	<br>
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-
 	<br>
 	<br>
 	<br>
@@ -793,7 +767,9 @@
 			$(".before-slider").slick({
 				draggable: false,
 				dots: true,
-				
+				dotsClass: 'before-slider__dots',
+				prevArrow: $('.arrow-left'),
+				nextArrow: $('.arrow-right')
 			});
 		});
 	</script>

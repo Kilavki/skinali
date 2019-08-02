@@ -953,9 +953,70 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.before-slider {
+.before-slider-wrap {
   max-width: 640px;
   margin: auto;
+  position: relative;
+}
+
+.before-slider-arrows {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.before-slider__dots {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.before-slider__dots li {
+  width: 10px;
+  margin: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #507fe1;
+}
+
+.before-slider__dots button {
+  display: none;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow-left {
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+}
+
+.arrow-right {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
 }
 
 .review-slider {
