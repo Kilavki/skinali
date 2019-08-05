@@ -17,12 +17,12 @@
 			<div class="container">
 				<nav class="menu__nav">
 					<a href="#" class="menu__link">Главная</a>
-					<a href="#" class="menu__link">Продукция</a>
-					<a href="#" class="menu__link">Каталог</a>
-					<a href="#" class="menu__link">Примеры работ</a>
-					<a href="#" class="menu__link">Примерка изображений</a>
-					<a href="#" class="menu__link">Стоимость работ</a>
-					<a href="#" class="menu__link">О скинали</a>
+					<a href="#offer" class="menu__link">Продукция</a>
+					<a href="#catalog" class="menu__link">Каталог</a>
+					<a href="#catalog" class="menu__link">Примеры работ</a>
+					<a href="#before" class="menu__link">Примерка изображений</a>
+					<a href="#price" class="menu__link">Стоимость работ</a>
+					<a href="#blog" class="menu__link">О скинали</a>
 				</nav>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 						<a class="navbar__phone" href="tel:+380441234567">+380 44 123 4567</a>
 						<a class="navbar__email navbar__small-text" href="mailto:info@mail.ua">info@mail.ua</a>
 					</div>
-					<button class="button-o navbar__button">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+					<a href="#offer" class="button-o navbar__button">Получить консультацию</a>
 				</div>
 			</div>
 			<!-- /.conatainer -->
@@ -58,7 +58,7 @@
 			<div class="container">
 				<h1 class="hero__title"> Гарантия<br> минимальной цены<br> на скинали </h1>
 				<span class="hero__subtitle"> от 3 000 р/м2 </span>
-				<button class="button hero__button">ЗАКАЗАТЬ СКИНАЛИ</button>
+				<a href="#offer" class="button hero__button">ЗАКАЗАТЬ СКИНАЛИ</a href="#offer">
 			</div>
 		</div>
 		<!-- /.hero -->
@@ -66,7 +66,7 @@
 	<!-- /.header -->
 
 	<main>
-		<section class="offer bg-secondary">
+		<section class="offer bg-secondary" id="offer">
 			<div class="container">
 				<div class="offer__block offer-block offer-block__calc-bg">
 					<h2 class="offer__title">ОСТАВЬТЕ ЗАЯВКУ НА ПРОСЧЕТ</h2>
@@ -75,13 +75,23 @@
 						<div class="form__row">
 							<div class="form__group">
 								<label for="" class="form__label">Вид стекла</label>
-								<input type="text" class="input form__input"></div>
+								<input type="hidden" name="type" id="select-type" value="С печаью">
+									<div class="select form__select">
+										<div class="select__checked">С печаью</div>
+											<ul class="select__dropdown">
+												<li class="select__option" data-value="С печаью">С печаью</li>
+												<li class="select__option" data-value="Без печати">Без печати</li>
+											</ul>
+									</div>
+							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Ширина, см</label>
-								<input type="text" class="input form__input"></div>
+								<input type="number" class="input form__input">
+							</div>
 							<div class="form__group">
 								<label for="" class="form__label">Высота, см</label>
-								<input type="text" class="input form__input"></div>
+								<input type="number" class="input form__input">
+							</div>
 						</div>
 						<div class="form__row form__row-checkbox">
 							<div class="form__checkbox">
@@ -116,7 +126,7 @@
 		</section>
 		<!-- /.offer -->
 		
-		<section class="features section">
+		<section class="features section" id="futures">
 			<div class="container">
 				<h2 class="section-title section__title"> Наши Приеимущества </h2>
 				<div class="features-block">
@@ -164,7 +174,7 @@
 		</section>
 		<!-- /.features section -->
 
-		<section class="section catalog">
+		<section class="section catalog" id="catalog">
 			<div class="container">
 				<h2 class="section-title section__title">Каталог скинали</h2>
 				<div class="catalog-block">
@@ -294,7 +304,7 @@
 			</div>
 		</section>
 
-		<section class="section blog">
+		<section class="section blog" id="blog">
 			<div class="container">
 				<div class="blog__heading">
 					<h3 class="blog__title">Полезное или что важно знать о скинали...</h3>
@@ -338,7 +348,7 @@
 		</section>
 		<!-- /.section blog -->
 
-		<section class="section price">
+		<section class="section price" id="price">
 			<div class="container">
 				<h2 class="section-title section__title">Цены и виды скинали</h2>
 				<!-- /.section-title section__title -->
@@ -445,7 +455,7 @@
 		</section>
 		<!-- /.section price -->
 		
-		<section class="section steps bg-secondary">
+		<section class="section steps bg-secondary" id="step">
 			<div class="container">
 				<h2 class="section-title section__title">Этапы работ</h2>
 				<!-- /.section-title section__title -->
@@ -505,7 +515,7 @@
 		</section>
 		<!-- /.section steps -->
 
-		<section class="section before">
+		<section class="section before" id="before">
 			<div class="container">
 				<h2 class="section-title section__title">до и после</h2>
 				<!-- /.section-title section__title -->
@@ -545,7 +555,7 @@
 		</section>
 		<!-- /.section before -->
 
-		<section class="section review bg-secondary">
+		<section class="section review bg-secondary" id="review">
 			<div class="container">
 				<h2 class="section-title section__title">
 					Отзывы наших клиентов
@@ -583,7 +593,7 @@
 		</section>
 		<!-- /.section review -->
 
-		<section class="offer">
+		<section class="offer" id="offer">
 			<div class="container">
 				<div class="offer__block offer-block offer-block__price-bg">
 					<h2 class="offer__title">Ищете где дешевле и лучше?</h2>
@@ -594,7 +604,7 @@
 								<input type="text" class="input form__input" placeholder="Ваше имя">
 							</div>
 							<div class="form__group">
-								<input type="text" class="input form__input" placeholder="Ваш телефон">
+								<input type="tel" class="input form__input" placeholder="Ваш телефон">
 							</div>
 							<div class="form__group">
 								<input type="text" class="input form__input" placeholder="Ваша цена">
@@ -619,7 +629,7 @@
 		</section>
 		<!-- /.offer -->
 
-		<section class="section factory">
+		<section class="section factory" id="factory">
 			<div class="container">
 				<h2 class="section-title section__title">
 					О производстве
@@ -641,7 +651,7 @@
 		</section>
 		<!-- /.section factory -->
 
-		<section class="section contact bg-secondary">
+		<section class="section contact bg-secondary" id="contact">
 			<div class="container">
 				<h2 class="section-title section__title">Контакты</h2>
 				<!-- /.section-title section__title -->
@@ -757,22 +767,8 @@
 	<script src="js/jquery.event.move.js"></script>
 	<script src="js/jquery.twentytwenty.js"></script>
 	<script src="js/slick.min.js"></script>
-
-	<script>
-		$(window).load(function () {
-			$(".before-after").twentytwenty({
-				before_label: 'Со скинали', // Set a custom before label
-				after_label: 'Без сканали' // Set a custom after label
-			});
-			$(".before-slider").slick({
-				draggable: false,
-				dots: true,
-				dotsClass: 'before-slider__dots',
-				prevArrow: $('.arrow-left'),
-				nextArrow: $('.arrow-right')
-			});
-		});
-	</script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

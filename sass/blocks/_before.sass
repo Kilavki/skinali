@@ -11,8 +11,10 @@
 			width: 100%
 			display: flex
 			justify-content: space-between
+			z-index: -1
 		&__dots
 			margin: auto
+			margin-top: 30px
 			display: flex
 			justify-content: center
 			align-items: center
@@ -20,10 +22,14 @@
 			padding: 0
 			li
 				width: 10px
-				margin: 10px
+				margin: 5px
 				height: 10px
 				border-radius: 50%
-				background-color: $primary
+				background-color: #d1d1d1
+				&:hover
+					cursor: pointer
+				&.slick-active
+					background-color: $primary
 			button
 				display: none
 .arrow
