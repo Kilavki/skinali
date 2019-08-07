@@ -500,10 +500,13 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat right top;
-  background-size: 60%;
+  background-image: url("../img/hero/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 58rem;
+  background-color: #f1f1f1;
   padding-top: 200px;
-  padding-bottom: 270px;
+  padding-bottom: 340px;
   margin-top: 80px;
 }
 
@@ -519,31 +522,8 @@ input[type="checkbox"]:checked + label:before {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-@media (max-width: 991px) {
-  .hero {
-    background-size: 60%;
-    background-position: right top;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero {
-    background-size: 65%;
-    background-position: right top;
-  }
-  .hero__title {
-    margin-top: 14%;
-  }
-}
-
-@media (max-width: 479px) {
-  .hero {
-    background-size: contain;
-    background-position: right top;
-  }
-  .hero__title {
-    margin-top: 32%;
-  }
+.hero__subtitle sup {
+  font-size: 18px;
 }
 
 .offer {
