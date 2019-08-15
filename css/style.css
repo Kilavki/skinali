@@ -1111,6 +1111,14 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
 }
 
+.review-slider__item:focus {
+  border: none;
+}
+
+.review-slider__item:hover {
+  cursor: pointer;
+}
+
 .review-slider__img {
   width: 70px;
   height: 70px;
@@ -1121,7 +1129,7 @@ input[type="checkbox"]:checked + label:before {
 
 .review-slider__text {
   position: relative;
-  max-width: 90%;
+  width: 80%;
   padding: 20px;
   margin-bottom: 20px;
   background-color: #fff;

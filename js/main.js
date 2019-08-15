@@ -37,9 +37,12 @@ $(window).load(function () {
 
 $(document).ready(function(){
 	$('.review-slider').slick({
-		arrows: true,
-		prevArrow: $('.arrow-left'),
-		nextArrow: $('.arrow-right')
+		arrows: false,
+		dots: false,
+		dotsClass: 'before-slider__dots',
+		centerMode: true,
+		centerPadding: '100px',
+		// focusOnSelect: true
 	});
 });
 	
