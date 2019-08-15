@@ -1124,8 +1124,6 @@ input[type="checkbox"]:checked + label:before {
   max-width: 350px;
   padding: 20px;
   margin-bottom: 20px;
-  font-size: 15px;
-  font-style: italic;
   background-color: #fff;
   border-radius: 10px;
 }
