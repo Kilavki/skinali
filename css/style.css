@@ -1121,7 +1121,7 @@ input[type="checkbox"]:checked + label:before {
 
 .review-slider__text {
   position: relative;
-  max-width: 350px;
+  max-width: 90%;
   padding: 20px;
   margin-bottom: 20px;
   background-color: #fff;

@@ -34,3 +34,12 @@ $(window).load(function () {
 	$('input[type="tel"]').mask("+38 (999) 999-99-99");
 
 });
+
+$(document).ready(function(){
+	$('.review-slider').slick({
+		arrows: true,
+		prevArrow: $('.arrow-left'),
+		nextArrow: $('.arrow-right')
+	});
+});
+	
