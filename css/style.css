@@ -564,6 +564,7 @@ input[type="checkbox"]:checked + label:before {
 .offer-block__price-bg {
   background-image: url("../img/form/ofer-block-price-bg.png");
   background-size: contain;
+  margin-top: 0;
 }
 
 .offer__title {
@@ -1112,7 +1113,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .review-slider__item:focus {
-  border: none;
+  outline: none;
 }
 
 .review-slider__item:hover {
@@ -1134,6 +1135,8 @@ input[type="checkbox"]:checked + label:before {
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
+  -webkit-box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .review-slider__text:after {

@@ -36,13 +36,10 @@ $(window).load(function () {
 });
 
 $(document).ready(function(){
-	$('.review-slider').slick({
+	$(".review-slider").slick({
 		arrows: false,
-		dots: false,
-		dotsClass: 'before-slider__dots',
 		centerMode: true,
-		centerPadding: '100px',
-		// focusOnSelect: true
+		centerPadding: "20px",
 	});
 });
 	
