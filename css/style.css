@@ -564,6 +564,7 @@ input[type="checkbox"]:checked + label:before {
 .offer-block__price-bg {
   background-image: url("../img/form/ofer-block-price-bg.png");
   background-size: contain;
+  margin-top: 0;
 }
 
 .offer__title {
@@ -1098,6 +1099,12 @@ input[type="checkbox"]:checked + label:before {
           transform: translateX(120%);
 }
 
+@media (max-width: 768px) {
+  .before-slider-arrows {
+    display: none;
+  }
+}
+
 .review-slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,6 +1118,14 @@ input[type="checkbox"]:checked + label:before {
   text-align: center;
 }
 
+.review-slider__item:focus {
+  outline: none;
+}
+
+.review-slider__item:hover {
+  cursor: pointer;
+}
+
 .review-slider__img {
   width: 70px;
   height: 70px;
@@ -1121,12 +1136,17 @@ input[type="checkbox"]:checked + label:before {
 
 .review-slider__text {
   position: relative;
-  max-width: 350px;
+  width: 80%;
   padding: 20px;
   margin-bottom: 20px;
+<<<<<<< HEAD
   font-size: 18px;
+=======
+>>>>>>> b24503306320e10144e89b125b638c4ca8e3974b
   background-color: #fff;
   border-radius: 10px;
+  -webkit-box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .review-slider__text:after {
