@@ -500,10 +500,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero {
-  background-image: url("../img/hero/hero-bg.jpg");
+  background-image: url("../img/hero/kitchen.png");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 64% auto;
+  background-size: 74% auto;
   background-color: #f1f1f1;
   padding-top: 200px;
   padding-bottom: 340px;
@@ -538,7 +538,10 @@ input[type="checkbox"]:checked + label:before {
   .hero__title {
     width: 100%;
     margin-top: 480px;
-    font-size: 36px;
+    font-size: 1.88rem;
+  }
+  .hero__button {
+    float: right;
   }
 }
 
@@ -553,7 +556,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   padding: 80px;
-  margin-top: -200px;
+  margin-top: -300px;
 }
 
 .offer-block__calc-bg {
@@ -812,7 +815,7 @@ input[type="checkbox"]:checked + label:before {
             justify-content: center;
   }
   .catalog-card {
-    max-width: 470px;
+    max-width: 100%;
   }
 }
 
