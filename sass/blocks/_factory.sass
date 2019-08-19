@@ -1,11 +1,20 @@
 .factory
 	&-block
 		display: flex
-		justify-content: center
-		flex-wrap: wrap
+		flex-direction: column
+		width: 60%
+		margin: auto
 		&__img
-			margin-top: 20px
+			width: 640px
 		&__text
-			margin-left: 70px
-			flex-basis: 50%
-			font-size: 20px
+			font-size: 1.2rem
+			padding:
+				left: 2em
+				right: 2em
+
+
+@media (max-width: 991px)
+	.factory
+		&-block
+			width: 68%
+

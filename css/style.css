@@ -500,10 +500,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero {
-  background-image: url("../img/hero/kitchen.png");
+  background-image: url("../img/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 74% auto;
+  background-size: 64% auto;
   background-color: #f1f1f1;
   padding-top: 200px;
   padding-bottom: 340px;
@@ -538,10 +538,7 @@ input[type="checkbox"]:checked + label:before {
   .hero__title {
     width: 100%;
     margin-top: 480px;
-    font-size: 1.88rem;
-  }
-  .hero__button {
-    float: right;
+    font-size: 36px;
   }
 }
 
@@ -556,7 +553,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   padding: 80px;
-  margin-top: -300px;
+  margin-top: -200px;
 }
 
 .offer-block__calc-bg {
@@ -882,12 +879,12 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 1199px) {
   .blog-list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .blog-list__card {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin: 20px;
   }
 }
 
@@ -1164,22 +1161,28 @@ input[type="checkbox"]:checked + label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: auto;
 }
 
 .factory-block__img {
-  margin-top: 20px;
+  width: 640px;
 }
 
 .factory-block__text {
-  margin-left: 70px;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  font-size: 20px;
+  font-size: 1.2rem;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+@media (max-width: 991px) {
+  .factory-block {
+    width: 68%;
+  }
 }
 
 .contacts-block {
@@ -1246,6 +1249,15 @@ input[type="checkbox"]:checked + label:before {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 786px) {
+  .questions-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer {
