@@ -500,7 +500,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero {
-  background-image: url("../img/hero/hero-bg.jpg");
+  background-image: url("../img/hero/kitchen.png");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 64% auto;
@@ -534,11 +534,19 @@ input[type="checkbox"]:checked + label:before {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding-bottom: 218px;
   }
   .hero__title {
     width: 100%;
     margin-top: 480px;
-    font-size: 36px;
+    font-size: 2rem;
+  }
+  .hero__button {
+    float: right;
+  }
+  .hero__subtitle {
+    font-size: 2rem;
+    margin-bottom: 1em;
   }
 }
 
@@ -1170,7 +1178,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .factory-block__img {
-  width: 640px;
+  width: 100%;
 }
 
 .factory-block__text {
@@ -1192,6 +1200,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #a9a9a9;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1205,12 +1214,13 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .contacts__text {
-  font-size: 16px;
+  font-size: 1.125rem;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .contacts__link {
   text-decoration: none;
-  color: #262626;
+  color: #a9a9a9;
 }
 
 .contacts__address {
