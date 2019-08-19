@@ -1211,6 +1211,7 @@ input[type="checkbox"]:checked + label:before {
 
 .contacts__img {
   margin-bottom: 25px;
+  width: 40px;
 }
 
 .contacts__text {
