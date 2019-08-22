@@ -1098,11 +1098,15 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .arrow-left {
+  width: 3rem;
+  opacity: 0.4;
   -webkit-transform: translateX(-120%);
           transform: translateX(-120%);
 }
 
 .arrow-right {
+  width: 3rem;
+  opacity: 0.4;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
 }
