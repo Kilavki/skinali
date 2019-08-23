@@ -45,8 +45,13 @@
   font-style: normal;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 100%;
   color: #262626;
 }
 
@@ -343,7 +348,7 @@ input[type="checkbox"]:checked + label:before {
   top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .navbar-wrap {
@@ -356,7 +361,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
+  min-height: 8%;
 }
 
 .navbar__mobile, .navbar__landline {
@@ -365,8 +370,8 @@ input[type="checkbox"]:checked + label:before {
 
 .navbar__phone {
   display: block;
-  margin-bottom: 5px;
-  size: 19px;
+  margin-bottom: 0.30em;
+  size: 1.18rem;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
   color: #262626;
@@ -374,7 +379,7 @@ input[type="checkbox"]:checked + label:before {
 
 .navbar__small-text {
   display: block;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #7b7b79;
   text-decoration: none;
 }
@@ -385,7 +390,7 @@ input[type="checkbox"]:checked + label:before {
   top: 80px;
   left: 0;
   width: 100%;
-  padding: 16px 0;
+  padding: 1em 0;
   background-color: #507fe1;
   color: #ffffff;
   -webkit-transition: 0.2s;
@@ -414,7 +419,7 @@ input[type="checkbox"]:checked + label:before {
 
 .menu__link {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -459,15 +464,15 @@ input[type="checkbox"]:checked + label:before {
 
 .logo__text {
   display: block;
-  margin-bottom: 5px;
-  font-size: 18px;
+  margin-bottom: 0.28em;
+  font-size: 1.12rem;
   text-transform: uppercase;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .logo__description {
   display: block;
-  font-size: 14px;
+  font-size: 0.88rem;
   color: text-color-light;
 }
 
@@ -525,35 +530,6 @@ input[type="checkbox"]:checked + label:before {
 
 .hero__subtitle sup {
   font-size: 18px;
-}
-
-@media (max-width: 991px) {
-  .hero {
-    background-size: contain;
-    background-position: right top;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding-bottom: 218px;
-  }
-  .hero__title {
-    width: 100%;
-    margin-top: 480px;
-    font-size: 2rem;
-  }
-  .hero__button {
-    float: right;
-  }
-  .hero__subtitle {
-    font-size: 2rem;
-    margin-bottom: 1em;
-  }
-}
-
-@media (max-width: 767px) {
-  .hero__title {
-    margin-top: 36vh;
-  }
 }
 
 .offer {
@@ -902,6 +878,15 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 768px) {
+  .blog__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1183,24 +1168,27 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 60%;
-  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .factory-block__img {
+  width: 68vw;
+  margin: auto;
+}
+
+.factory-block__img img {
   width: 100%;
+  height: auto;
 }
 
 .factory-block__text {
+  width: 68vw;
   font-size: 1.2rem;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-@media (max-width: 991px) {
-  .factory-block {
-    width: 68%;
-  }
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 
 .contacts-block {

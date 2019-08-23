@@ -4,24 +4,24 @@
 	top: 0
 	width: 100%
 	background-color: #fff
-	z-index: 1000
+	z-index: 100
 	&-wrap
 		display: flex
 		align-items: center
 		justify-content: space-between
-		min-height: 80px
+		min-height: 8%
 	&__mobile, &__landline
 		text-align: right
 	&__phone
 		display: block
-		margin-bottom: 5px
-		size: 19px
+		margin-bottom: 0.30em
+		size: 1.18rem
 		+bold
 		text-decoration: none
 		color: $text-color
 	&__small-text
 		display: block
-		font-size: 14px
+		font-size: 0.8rem
 		color: $text-color-light
 		text-decoration: none
 
@@ -32,7 +32,7 @@
 	top: 80px
 	left: 0
 	width: 100%
-	padding: 16px 0
+	padding: 1em 0
 	background-color: $primary
 	color: #ffffff
 	transition: 0.2s
@@ -47,7 +47,7 @@
 		justify-content: space-around
 	&__link
 		text-decoration: none
-		font-size: 17px
+		font-size: 1rem
 		text-transform: uppercase
 		color: #ffffff
 	&-button
@@ -75,14 +75,15 @@
 .logo
 	&__text
 		display: block
-		margin-bottom: 5px
-		font-size: 18px
+		margin-bottom: 0.28em
+		font-size: 1.12rem
 		text-transform: uppercase
 		+bold
 	&__description
 		display: block
-		font-size: 14px
+		font-size: 0.88rem
 		color: text-color-light
+
 @media (max-width: 991px)
 	.navbar
 		&__mobile, &__landline
