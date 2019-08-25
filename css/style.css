@@ -522,31 +522,9 @@ input[type="checkbox"]:checked + label:before {
           transform: rotate(45deg);
 }
 
-@media (max-width: 991px) {
-  .navbar__mobile, .navbar__landline {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    display: none;
-  }
-  .menu {
-    top: 60px;
-  }
-  .menu-button {
-    height: 60px;
-  }
-  .menu__nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 20px;
-  }
-  .menu__link {
-    margin-bottom: 20px;
+@media (max-width: 599px) and (min-width: 600px) {
+  .logo__description {
+    color: red;
   }
 }
 
