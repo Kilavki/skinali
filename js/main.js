@@ -10,9 +10,17 @@ $(window).load(function () {
 		prevArrow: $('.arrow-left'),
 		nextArrow: $('.arrow-right')
 	});
+	//верхнее меню
 	$('.menu-button').on('click', function() {
 		$('.menu').toggleClass('menu_active');
 	});
+
+	$('.menu-button').on('click', function(cross) {
+		cross.preventDefault;
+		$('.burger-menu').toggleClass('burger-menu-active');
+	});
+
+
 
 	/* Настройка select */
 	$('.select__checked').on('click', function() {
@@ -42,4 +50,5 @@ $(document).ready(function(){
 		centerPadding: "20px",
 	});
 });
-	
+
+

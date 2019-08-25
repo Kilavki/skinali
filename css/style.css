@@ -444,6 +444,7 @@ input[type="checkbox"]:checked + label:before {
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   height: 80px;
   width: 70px;
+  position: relative;
 }
 
 .menu-button:hover {
@@ -452,14 +453,6 @@ input[type="checkbox"]:checked + label:before {
 
 .menu-button:focus {
   outline: none;
-}
-
-.menu-button__line {
-  display: block;
-  width: 20px;
-  height: 3px;
-  background-color: #89a9eb;
-  margin: 2px 0;
 }
 
 .logo__text {
@@ -474,6 +467,59 @@ input[type="checkbox"]:checked + label:before {
   display: block;
   font-size: 0.88rem;
   color: text-color-light;
+}
+
+.burger-menu {
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  left: 50%;
+  margin-left: -10px;
+  background-color: #507fe1;
+}
+
+.burger-menu:before, .burger-menu:after {
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5px;
+  left: 50%;
+  margin-left: -10px;
+  background-color: #507fe1;
+}
+
+.burger-menu:before, .burger-menu:after {
+  content: '';
+  display: block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.burger-menu:before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.burger-menu:after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.burger-menu-active {
+  height: 0;
+}
+
+.burger-menu-active:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.burger-menu-active:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @media (max-width: 991px) {

@@ -61,16 +61,11 @@
 		border-left: 1px solid rgba(#510bba, 0.1)
 		height: 80px
 		width: 70px
+		position: relative
 		&:hover
 			cursor: pointer
 		&:focus
 			outline: none
-		&__line
-			display: block
-			width: 20px
-			height: 3px
-			background-color: #89a9eb
-			margin: 2px 0
 
 .logo
 	&__text
@@ -83,6 +78,39 @@
 		display: block
 		font-size: 0.88rem
 		color: text-color-light
+
+.burger-menu
+	width: 20px
+	height: 3px
+	position: absolute
+	top: 50%
+	margin-top: -1.5px
+	left: 50%
+	margin-left: -10px
+	background-color: $primary
+	&:before, &:after
+		width: 20px
+		height: 3px
+		position: absolute
+		top: 50%
+		margin-top: -1.5px
+		left: 50%
+		margin-left: -10px
+		background-color: $primary
+	&:before, &:after
+		content: ''
+		display: block
+		transition: all .5s
+	&:before
+		transform: translateY(-7px)
+	&:after
+		transform: translateY(7px)
+	&-active
+		height: 0
+		&:before
+			transform: rotate(-45deg)
+		&:after
+			transform: rotate(45deg)
 
 @media (max-width: 991px)
 	.navbar
@@ -100,3 +128,4 @@
 			padding-top: 20px
 		&__link
 			margin-bottom: 20px
+
