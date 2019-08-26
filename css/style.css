@@ -50,60 +50,54 @@ html {
 }
 
 body {
-  font-family: 'Proxima Nova Light', sans-serif;
   font-size: 100%;
   color: #262626;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 10.4vw 0;
 }
 
 .section-title {
   font-size: 30px;
-  font-family: 'Proxima Nova Semibold', sans-serif;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .section__title {
   margin-bottom: 100px;
 }
 
-.button-o {
-  border: 2px solid #507fe1;
-  padding: 17px 22px;
-  font-size: 12px;
-  text-transform: uppercase;
-  background-color: #fff;
-  color: #507fe1;
-  text-decoration: none;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
 .button {
-  border: none;
+  padding: 1.4em 1.8em;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #fff;
   text-transform: uppercase;
-  padding: 25px 45px;
-  background-color: #507fe1;
-  color: #ffffff;
   text-decoration: none;
+  border: none;
+  background-color: #507fe1;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-.button:hover {
-  cursor: pointer;
+.button-outline {
+  color: #507fe1;
+  border: 2px solid #507fe1;
+  background-color: #fff;
 }
 
 .button-fitting, .button-add, .button-like {
   padding: 10px;
   height: 30px;
-  text-transform: uppercase;
   font-size: 11px;
+  text-transform: uppercase;
   border: none;
 }
 
@@ -120,6 +114,10 @@ img {
 .button-like {
   width: 30px;
   background-color: #507fe1;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .bg-secondary {
@@ -217,26 +215,9 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 20px;
 }
 
-@media (max-width: 576px) {
-  .button {
-    font-size: 10px;
-    font-size: 10px;
-  }
-  .section {
-    padding: 60px 0;
-  }
-  .section-title {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 400px) {
-  .button {
-    font-size: 8px;
-    font-size: 8px;
-  }
-  .section__title {
-    margin-bottom: 62px;
+@media (min-width: 600px) and (max-width: 899px) {
+  .button-outline {
+    padding: 0.6em;
   }
 }
 
@@ -392,7 +373,7 @@ input[type="checkbox"]:checked + label:before {
   width: 100%;
   padding: 1em 0;
   background-color: #507fe1;
-  color: #ffffff;
+  color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-transform: translateY(-200%);
@@ -425,6 +406,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .menu-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,13 +420,12 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: transparent;
+  width: 70px;
+  height: 80px;
   border: none;
   border-right: 1px solid rgba(81, 11, 186, 0.1);
   border-left: 1px solid rgba(81, 11, 186, 0.1);
-  height: 80px;
-  width: 70px;
-  position: relative;
+  background-color: transparent;
 }
 
 .menu-button:hover {
@@ -520,12 +501,6 @@ input[type="checkbox"]:checked + label:before {
 .burger-menu-active:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-@media (max-width: 599px) and (min-width: 600px) {
-  .logo__description {
-    color: red;
-  }
 }
 
 .hero {

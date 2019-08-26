@@ -1,45 +1,44 @@
 html
 	font-size: 100%
+	
 body
-	+light
 	font-size: 100%
 	color: $text-color
+	+light
+	
 img
 	max-width: 100%
+	height: auto
+
 .section
-	padding: 100px 0
+	padding: 10.4vw 0
 	&-title
 		font-size: 30px
-		+bold
 		text-align: center
 		text-transform: uppercase
+		+bold
 	&__title
 		margin-bottom: 100px
-.button-o
-	border: 2px solid $primary
-	padding: 17px 22px
-	font-size: 12px
-	text-transform: uppercase
-	background-color: #fff
-	color: $primary
-	text-decoration: none
-	+bold
 
 .button
-	border: none
+	padding: 1.4em 1.8em
+	font-size: 0.75rem
+	text-align: center
+	color: #fff
 	text-transform: uppercase
-	padding: 25px 45px
-	background-color: $primary
-	color: #ffffff
 	text-decoration: none
+	border: none
+	background-color: $primary
 	+bold
-	&:hover
-		cursor: pointer
+	&-outline
+		color: $primary
+		border: 2px solid $primary
+		background-color: #fff
 	&-fitting, &-add, &-like
 		padding: 10px
 		height: 30px
-		text-transform: uppercase
 		font-size: 11px
+		text-transform: uppercase
 		border: none
 	&-fitting
 		background-color: #ffffff
@@ -50,12 +49,12 @@ img
 	&-like
 		width: 30px
 		background-color: $primary
-
-
-
+	&:hover
+		cursor: pointer
 
 .bg-secondary
 	background-color: $bg-secondary
+	
 .input
 	height: 80px
 	padding:
@@ -63,10 +62,12 @@ img
 		right: 30px
 	text-align: center
 	border: 1px solid #dddddd
+	
 input[type="checkbox"]
 	display: none
 	&:checked + label:before
-			background-color: $primary
+		background-color: $primary
+
 .select
 	position: relative
 	height: 80px
@@ -105,7 +106,6 @@ input[type="checkbox"]
 		&:hover
 			background-color: $bg-secondary
 
-		
 .checkbox
 	&-label
 		display: flex
@@ -120,20 +120,8 @@ input[type="checkbox"]
 			border: 1px solid #dddddd
 			margin-right: 20px
 			
-@media (max-width: 576px)
+			
+@media (min-width: 600px) and (max-width: 899px)
 	.button
-		font-size: 10px
-		&-o
-		font-size: 10px
-	.section
-		padding: 60px 0
-		&-title
-			font-size: 24px
-@media (max-width: 400px)
-	.button
-		font-size: 8px
-		&-o
-		font-size: 8px
-	.section__title
-		margin-bottom: 62px
-
+		&-outline
+			padding: 0.6em
