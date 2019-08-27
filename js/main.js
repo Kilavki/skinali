@@ -1,7 +1,7 @@
 $(window).load(function () {
 	$(".before-after").twentytwenty({
-		before_label: 'Со скинали', // Set a custom before label
-		after_label: 'Без сканали' // Set a custom after label
+		before_label: 'Туда', // Set a custom before label
+		after_label: 'Сюда' // Set a custom after label
 	});
 	$(".before-slider").slick({
 		draggable: false,
