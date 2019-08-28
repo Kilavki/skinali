@@ -352,7 +352,7 @@ input[type="checkbox"]:checked + label:before {
 .navbar__phone {
   display: block;
   margin-bottom: 0.30em;
-  size: 1.18rem;
+  font-size: 1.12rem;
   font-family: 'Proxima Nova Semibold', sans-serif;
   text-decoration: none;
   color: #262626;
@@ -513,9 +513,10 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .hero__title {
-  width: 23%;
+  width: 24%;
   font-size: 1.9rem;
   margin-bottom: 1.3em;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .hero__subtitle {
