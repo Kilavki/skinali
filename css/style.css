@@ -531,7 +531,7 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer {
-  padding: 129px 0;
+  padding: 10% 0;
 }
 
 .offer-block {
@@ -540,8 +540,8 @@ input[type="checkbox"]:checked + label:before {
   background-color: #fff;
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
-  padding: 80px;
-  margin-top: -200px;
+  padding: 5em;
+  margin-top: -28%;
 }
 
 .offer-block__calc-bg {
@@ -556,17 +556,17 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer__title {
-  font-size: 21px;
+  font-size: 1.32rem;
   text-transform: uppercase;
   font-family: 'Proxima Nova Semibold', sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 0.76em;
 }
 
 .offer__subtitle {
-  max-width: 660px;
+  max-width: 68%;
   display: block;
-  font-size: 21px;
-  margin-bottom: 48px;
+  font-size: 1.32rem;
+  margin-bottom: 2.28em;
 }
 
 .form__row {
@@ -576,8 +576,8 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 900px;
-  margin-bottom: 30px;
+  max-width: 94%;
+  margin-bottom: 1.88em;
 }
 
 .form__row:last-child {
@@ -586,8 +586,8 @@ input[type="checkbox"]:checked + label:before {
 
 .form__label {
   display: block;
-  font-size: 17px;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  margin-bottom: 0.9em;
 }
 
 .form__group {
@@ -608,7 +608,7 @@ input[type="checkbox"]:checked + label:before {
 
 .form__policy {
   display: inline-block;
-  margin-left: 45px;
+  margin-left: 2.8em;
 }
 
 .features-block {
