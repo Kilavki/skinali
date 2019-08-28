@@ -436,18 +436,16 @@ input[type="checkbox"]:checked + label:before {
   outline: none;
 }
 
-.logo__text {
-  display: block;
-  margin-bottom: 0.28em;
-  font-size: 1.12rem;
-  text-transform: uppercase;
-  font-family: 'Proxima Nova Semibold', sans-serif;
+.logo {
+  fill: #507fe1;
+  height: 30px;
 }
 
 .logo__description {
   display: block;
   font-size: 0.88rem;
-  color: text-color-light;
+  text-align: center;
+  color: #7b7b79;
 }
 
 .burger-menu {
