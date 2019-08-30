@@ -103,7 +103,12 @@
 		&:after
 			transform: rotate(45deg)
 
-@media (min-width: 900px) and (max-width: 1199px)
+@media (max-width: 900px)
+	.navbar
+		&__mobile,
+		&__landline
+			display: none
+@media (min-width: 900px) and (max-width: 1200px)
 	.navbar
 		&-wrap
 			position: relative
@@ -115,4 +120,6 @@
 			display: none
 		&__button
 			right: 120px
-
+	// .hero
+	// 	&__title
+	// 		margin-top: 20%

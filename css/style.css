@@ -492,7 +492,13 @@ input[type="checkbox"]:checked + label:before {
           transform: rotate(45deg);
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
+@media (max-width: 900px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
   .navbar-wrap {
     position: relative;
   }
@@ -510,8 +516,6 @@ input[type="checkbox"]:checked + label:before {
 
 .hero {
   margin-top: 80px;
-  padding-top: 200px;
-  padding-bottom: 800px;
   background-image: url("../img/hero/kitchen.png");
   background-repeat: no-repeat;
   background-position: right top;
@@ -519,30 +523,27 @@ input[type="checkbox"]:checked + label:before {
   background-color: #f1f1f1;
 }
 
-.hero__wrap-title {
+.hero__wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.title-box {
   position: absolute;
-  top: 24%;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  top: 20%;
+  width: 28%;
 }
 
-.hero__title {
-  width: 340px;
-  font-size: 2rem;
-  font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
-.hero__subtitle {
+.title-box-h1, .title-box-subtitle {
   display: block;
-  margin-bottom: 2.8em;
-  font-size: 2rem;
+  margin-bottom: 1.3em;
+  font-size: 1.9rem;
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-.hero__subtitle sup {
+.title-box-subtitle sup {
   font-size: 1rem;
+  font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
 .offer {
