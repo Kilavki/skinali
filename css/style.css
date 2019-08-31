@@ -215,9 +215,9 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 20px;
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 900px) {
   .button-outline {
-    padding: 0.6em;
+    padding: 0.9em;
   }
 }
 
@@ -402,7 +402,7 @@ input[type="checkbox"]:checked + label:before {
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
 }
 
 .menu-button {
@@ -501,9 +501,21 @@ input[type="checkbox"]:checked + label:before {
           transform: rotate(45deg);
 }
 
-@media (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
+  .logo {
+    height: 20px;
+  }
   .navbar__mobile, .navbar__landline {
     display: none;
+  }
+  .navbar-wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .title-box {
+    top: 50% !important;
+    width: 100% !important;
   }
 }
 
@@ -520,6 +532,9 @@ input[type="checkbox"]:checked + label:before {
   }
   .navbar__button {
     right: 120px;
+  }
+  .menu__link {
+    font-size: 0.95rem;
   }
 }
 
@@ -555,6 +570,18 @@ input[type="checkbox"]:checked + label:before {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+  .hero {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .title-box {
+    width: 36%;
+  }
+}
+
 .offer {
   padding: 10% 0;
 }
@@ -566,7 +593,7 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   padding: 5em;
-  margin-top: -28%;
+  margin-top: -30%;
 }
 
 .offer-block__calc-bg {
@@ -634,6 +661,12 @@ input[type="checkbox"]:checked + label:before {
 .form__policy {
   display: inline-block;
   margin-left: 2.8em;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .offer__block {
+    margin-top: 40%;
+  }
 }
 
 .features-block {
