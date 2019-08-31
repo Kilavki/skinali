@@ -538,6 +538,19 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 600px) {
+  .navbar__logo, .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
 .hero {
   margin-top: 80px;
   background-image: url("../img/hero/kitchen.png");
@@ -570,15 +583,32 @@ input[type="checkbox"]:checked + label:before {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
+@media (min-width: 900px) and (max-width: 1199px) {
+  .title-box {
+    width: 36%;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 900px) {
   .hero {
     background-size: contain;
   }
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
+@media (max-width: 600px) {
+  .hero {
+    background-image: none;
+  }
+  .hero__wrap {
+    height: 50vh;
+  }
   .title-box {
-    width: 36%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -935,6 +965,21 @@ input[type="checkbox"]:checked + label:before {
       flex-wrap: wrap;
 }
 
+@media (max-width: 991px) {
+  .step {
+    width: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .step {
+    width: 100%;
+  }
+}
+
 .before-slider-wrap {
   max-width: 640px;
   margin: auto;
@@ -1013,6 +1058,12 @@ input[type="checkbox"]:checked + label:before {
   opacity: 0.4;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
+}
+
+@media (max-width: 600px) {
+  .before-slider-arrows {
+    display: none;
+  }
 }
 
 .review-slider {

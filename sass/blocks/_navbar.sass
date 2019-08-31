@@ -123,8 +123,6 @@
 		top: 50% !important
 		width: 100% !important
 
-
-			
 @media (min-width: 900px) and (max-width: 1200px)
 	.navbar
 		&-wrap
@@ -140,3 +138,14 @@
 	.menu
 		&__link
 			font-size: 0.95rem
+
+@media (max-width: 600px)
+	.navbar
+		&__logo,
+		&__mobile,
+		&__landline
+			display: none
+	.menu__nav
+		flex-direction: column
+		height: 100%
+	

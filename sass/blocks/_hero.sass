@@ -25,12 +25,24 @@
 			font-size: 1rem
 			+bold
 
+@media (min-width: 900px) and (max-width: 1199px)
+	.title-box
+		width: 36%
+
 @media (min-width: 600px) and (max-width: 900px)
 	.hero
 		background: 
 			size: contain
-@media (min-width: 900px) and (max-width: 1199px)
-	.title-box
-		width: 36%
 		
+@media (max-width: 600px)
+	.hero
+		background-image: none
+		&__wrap
+			height: 50vh
+	.title-box
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 80%
+		text-align: center
 
