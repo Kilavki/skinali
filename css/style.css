@@ -9,26 +9,6 @@
   padding: 0 30px;
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 899px) {
-  .container {
-    max-width: 768px;
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 599px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-}
-
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -213,12 +193,6 @@ input[type="checkbox"]:checked + label:before {
   height: 30px;
   border: 1px solid #dddddd;
   margin-right: 20px;
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .button-outline {
-    padding: 0.9em;
-  }
 }
 
 /* Slider */
@@ -501,51 +475,6 @@ input[type="checkbox"]:checked + label:before {
           transform: rotate(45deg);
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
-  .navbar-wrap {
-    position: relative;
-  }
-  .navbar__logo {
-    position: absolute;
-    margin-left: 6em;
-  }
-  .navbar__mobile, .navbar__landline {
-    display: none;
-  }
-  .navbar__button {
-    right: 120px;
-  }
-  .menu__link {
-    font-size: 0.95rem;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .logo {
-    height: 20px;
-  }
-  .navbar__mobile, .navbar__landline {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar__logo, .navbar__mobile, .navbar__landline {
-    display: none;
-  }
-  .menu__nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-  }
-  .menu__link {
-    padding-top: 1.6rem;
-  }
-}
-
 .hero {
   margin-top: 80px;
   background-image: url("../img/hero/kitchen.png");
@@ -576,41 +505,6 @@ input[type="checkbox"]:checked + label:before {
 .title-box-subtitle sup {
   font-size: 1rem;
   font-family: 'Proxima Nova Semibold', sans-serif;
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
-  .hero {
-    background-size: 94vw;
-  }
-  .title-box {
-    width: 36%;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-  .hero {
-    background-size: contain;
-  }
-  .title-box {
-    width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero {
-    background-image: none;
-  }
-  .hero__wrap {
-    height: 50vh;
-  }
-  .title-box {
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 80%;
-    text-align: center;
-  }
 }
 
 .offer {
@@ -692,12 +586,6 @@ input[type="checkbox"]:checked + label:before {
 .form__policy {
   display: inline-block;
   margin-left: 2.8em;
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
-  .offer-block {
-    margin-top: 0;
-  }
 }
 
 .features-block {
@@ -966,21 +854,6 @@ input[type="checkbox"]:checked + label:before {
       flex-wrap: wrap;
 }
 
-@media (max-width: 991px) {
-  .step {
-    width: 33%;
-  }
-  .step:before {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .step {
-    width: 100%;
-  }
-}
-
 .before-slider-wrap {
   max-width: 640px;
   margin: auto;
@@ -1059,12 +932,6 @@ input[type="checkbox"]:checked + label:before {
   opacity: 0.4;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
-}
-
-@media (max-width: 600px) {
-  .before-slider-arrows {
-    display: none;
-  }
 }
 
 .review-slider {
