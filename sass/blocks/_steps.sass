@@ -29,13 +29,18 @@
 	.step
 		&:before
 			display: none
+		&s
+			&-block
+				width: 70%
+				margin: 0 auto
 @media (max-width: 899px)
 	.steps
-		display: flex
 		flex-direction: column
-		fw
+@media (max-width: 600px)
+	.steps
 		&-block
 			width: 33%
+		
 
 
 

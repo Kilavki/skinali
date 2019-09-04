@@ -27,9 +27,12 @@
 
 
 @media (max-width: 1999px)
-		.hero
-			background:
-				size: contain
+	.hero
+		background:
+			size: contain
+		&__wrap
+			height: 96vh
+
 @media (max-width: 899px)
 	.hero
 		background:
@@ -43,3 +46,16 @@
 		&-subtitle
 			display: inline
 
+@media (max-width: 599px)
+	.hero
+		background:
+			image: none
+		&__button
+			float: none
+		&__wrap
+			height: 50vh
+	.title-box 
+		top: 40px
+		text-align: center
+		&-subtitle
+			display: block
