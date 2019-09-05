@@ -73,7 +73,7 @@
 				background-image: none
 	.form
 		&__row
-			flex-direction: column
+			flex-direction: row
 		&__group
 			flex-basis: 100%
 			width: 100%
@@ -81,6 +81,7 @@
 @media (max-width: 599px)
 	.form
 		&__row
+			flex-direction: column
 			&-checkbox
 				flex-direction: column
 				align-items: flex-start
@@ -88,3 +89,4 @@
 			margin-bottom: 20px
 		&__group input
 			padding: 0
+			margin-bottom: 20px 
