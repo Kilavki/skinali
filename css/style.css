@@ -740,13 +740,13 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media (max-width: 899px) {
-  .features-block__item {
+  .features-block__text {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 599px) {
   .features-block__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
