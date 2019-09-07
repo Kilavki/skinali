@@ -753,10 +753,6 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-.catalog {
-  background-color: #f5f6f7;
-}
-
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,7 +769,14 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .catalog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 540px;
+  max-height: 162px;
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
