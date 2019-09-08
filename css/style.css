@@ -1290,6 +1290,15 @@ input[type="checkbox"]:checked + label:before {
       justify-content: space-around;
 }
 
+@media (max-width: 599px) {
+  .questions-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
 .footer {
   padding: 40px 0;
   background-color: #262626;
