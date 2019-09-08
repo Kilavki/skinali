@@ -2,6 +2,10 @@
 	padding: 40px 0
 	background-color: #262626
 	color: #fff
+	// &__descr,
+	// &__pay-info,
+	// &__contacts
+	// 	flex-basis: 33.33%
 	&-block
 		display: flex
 		justify-content: space-between
@@ -19,9 +23,14 @@
 		margin-bottom: 48px
 	&__copy
 		color: #767676
+	&__pay-info
+		display: flex
+		justify-content: center
+		align-items: center
+		// width: 400px
 	&__pay-logo
-		max-height: 20px
-		margin: 10px
+		max-height: 48px
+		margin: 12px
 	&__contacts
 		text-align: right
 	&__phone
@@ -29,9 +38,6 @@
 		margin-bottom: 20px
 		font-size: 20px
 		+bold
-	&__copyright
-		color: rgba(#fff, 0.5)
-		margin-bottom: 25px
 	&__mail
 		display: block
 		margin-bottom: 20px
@@ -39,4 +45,30 @@
 		&__img
 			width: 36px
 			margin-left: 10px
+	&__copyright
+		display: block
+		color: rgba(#fff, 0.5)
+		margin: 25px
 
+@media (max-width: 899px)
+	.footer
+		a
+			text-align: center
+		&-block
+			flex-direction: column
+			align-items: center
+			text-align: center
+		&__pay-info
+			margin-bottom: 3em
+		&__pay-logo
+			max-height: 48px
+			margin: 0.75em
+
+@media (max-width: 599px)
+	.footer
+		&__pay-info
+			flex-flow: column wrap
+			align-items: center
+			width: 100%
+		&__copyright
+			text-align: center

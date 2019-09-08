@@ -1327,9 +1327,21 @@ input[type="checkbox"]:checked + label:before {
   color: #767676;
 }
 
+.footer__pay-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__pay-logo {
-  max-height: 20px;
-  margin: 10px;
+  max-height: 48px;
+  margin: 12px;
 }
 
 .footer__contacts {
@@ -1343,11 +1355,6 @@ input[type="checkbox"]:checked + label:before {
   font-family: 'Proxima Nova Semibold', sans-serif;
 }
 
-.footer__copyright {
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 25px;
-}
-
 .footer__mail {
   display: block;
   margin-bottom: 20px;
@@ -1356,5 +1363,50 @@ input[type="checkbox"]:checked + label:before {
 .footer-social__img {
   width: 36px;
   margin-left: 10px;
+}
+
+.footer__copyright {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 25px;
+}
+
+@media (max-width: 899px) {
+  .footer a {
+    text-align: center;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__pay-info {
+    margin-bottom: 3em;
+  }
+  .footer__pay-logo {
+    max-height: 48px;
+    margin: 0.75em;
+  }
+}
+
+@media (max-width: 599px) {
+  .footer__pay-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .footer__copyright {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
