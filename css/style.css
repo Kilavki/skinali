@@ -215,6 +215,14 @@ input[type="checkbox"]:checked + label:before {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  .button-outline {
+    color: #507fe1;
+    border: 2px solid #507fe1;
+    background-color: #fff;
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -501,7 +509,7 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .navbar__logo {
     display: none;
   }
