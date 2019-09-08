@@ -907,6 +907,17 @@ input[type="checkbox"]:checked + label:before {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
 }
 
+@media (max-width: 899px) {
+  .blog-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-list__card {
+    margin: 20px;
+  }
+}
+
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,6 +978,23 @@ input[type="checkbox"]:checked + label:before {
 .price-card:hover .price-card__button {
   z-index: 99;
   bottom: -80px;
+}
+
+@media (max-width: 899px) {
+  .price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-block__card {
+    margin: 20px;
+  }
+  .blog__heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .step {
