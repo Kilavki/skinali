@@ -722,7 +722,7 @@ input[type="checkbox"]:checked + label:before {
   .form__checkbox {
     margin-bottom: 20px;
   }
-  .form__group input {
+  .form__group {
     padding: 0;
     margin-bottom: 20px;
   }
