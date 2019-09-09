@@ -748,6 +748,10 @@ input[type="checkbox"]:checked + label:before {
     padding: 0;
     margin-bottom: 20px;
   }
+  .form__policy {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .features-block {
