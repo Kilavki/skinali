@@ -1300,6 +1300,18 @@ input[type="checkbox"]:checked + label:before {
   font-style: normal;
 }
 
+@media (max-width: 599px) {
+  .contacts-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .contacts-block__item {
+    margin-bottom: 1.25em;
+  }
+}
+
 .questions__title {
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
