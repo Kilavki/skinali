@@ -638,7 +638,6 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 94%;
   margin-bottom: 1.88em;
 }
 
