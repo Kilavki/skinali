@@ -116,8 +116,22 @@
 		&__mobile, &__landline
 			display: none
 			
+@media (max-width: 899px)
+	.menu
+		&__link
+			font-size: 0.6rem
+		&__nav
+			font-size: 5px
 
 @media (max-width: 768px)
 	.navbar
 		&__logo
 			display: none
+
+@media (max-width: 599px)
+	.menu
+		&__nav
+			flex-flow: column wrap
+			padding-top: 1.25em
+		&__link
+			margin-bottom: 1.25em

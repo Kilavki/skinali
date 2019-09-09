@@ -509,9 +509,31 @@ input[type="checkbox"]:checked + label:before {
   }
 }
 
+@media (max-width: 899px) {
+  .menu__link {
+    font-size: 0.6rem;
+  }
+  .menu__nav {
+    font-size: 5px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar__logo {
     display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    padding-top: 1.25em;
+  }
+  .menu__link {
+    margin-bottom: 1.25em;
   }
 }
 
