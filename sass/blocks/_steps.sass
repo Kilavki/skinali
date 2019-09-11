@@ -1,3 +1,9 @@
+.steps
+	&-block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	
 .step
 	position: relative
 	text-align: center
@@ -19,20 +25,16 @@
 		max-width: 160px
 		margin: auto
 		margin-bottom: 30px
-	&s
-		&-block
-			display: flex
-			justify-content: space-between
-			flex-wrap: wrap
 
 @media (max-width: 1199px)
+	.steps
+		&-block
+			width: 70%
+			margin: 0 auto
 	.step
 		&:before
 			display: none
-		&s
-			&-block
-				width: 70%
-				margin: 0 auto
+
 @media (max-width: 899px)
 	.steps
 		flex-direction: column
