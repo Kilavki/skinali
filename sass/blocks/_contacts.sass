@@ -2,6 +2,8 @@
 	&-block
 		display: flex
 		justify-content: space-between
+		width: 80%
+		margin: 0 auto
 		color: $light-grey
 		flex-wrap: wrap
 		&__item
@@ -18,6 +20,11 @@
 	&__address
 		font-style: normal
 
+
+@media (max-width: 899px)
+	.contacts
+		&-block
+			width: 100%
 
 @media (max-width: 599px)
 	.contacts
