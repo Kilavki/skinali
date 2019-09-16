@@ -1083,7 +1083,7 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 1199px) {
   .steps-block {
-    width: 70%;
+    width: 84%;
     margin: 0 auto;
   }
   .step:before {
