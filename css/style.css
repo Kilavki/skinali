@@ -706,7 +706,7 @@ input[type="checkbox"]:checked + label:before {
 @media (max-width: 1999px) {
   .offer-block {
     margin-top: 0;
-    background-position: center right -210px;
+    background-position: center right -150px;
   }
 }
 
