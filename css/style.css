@@ -596,7 +596,7 @@ input[type="checkbox"]:checked + label:before {
   }
   .title-box {
     top: inherit;
-    bottom: 160px;
+    bottom: 13%;
     width: 100%;
   }
   .title-box-subtitle {
@@ -634,7 +634,6 @@ input[type="checkbox"]:checked + label:before {
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
   padding: 5em;
-  margin-top: -30%;
 }
 
 .offer-block__calc-bg {
@@ -645,7 +644,6 @@ input[type="checkbox"]:checked + label:before {
 .offer-block__price-bg {
   background-image: url("../img/form/ofer-block-price-bg.png");
   background-size: contain;
-  margin-top: 0;
 }
 
 .offer__title {
@@ -705,7 +703,6 @@ input[type="checkbox"]:checked + label:before {
 
 @media (max-width: 1999px) {
   .offer-block {
-    margin-top: 0;
     background-position: center right -150px;
   }
 }
@@ -717,6 +714,9 @@ input[type="checkbox"]:checked + label:before {
   .offer__subtitle {
     max-width: 100%;
     text-align: center;
+  }
+  .offer-block {
+    margin-top: -16%;
   }
   .offer-block__calc-bg, .offer-block__price-bg {
     background-image: none;
